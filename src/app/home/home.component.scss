@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  justify-content: center;
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    img {
+      width: 100%;
+    }
+  }
+}

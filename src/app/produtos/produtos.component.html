@@ -1,0 +1,173 @@
+<div class="produtos-container">
+    <div class="produto">
+        <img (click)="toggle1()" src="assets/img/joia1.png" />
+        <h1>Joia 1</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle2()" src="assets/img/joia2.png" />
+        <h1>Joia 2</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle3()" src="assets/img/joia3.png" />
+        <h1>Joia 3</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle4()" src="assets/img/joia4.png" />
+        <h1>Joia 4</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle5()" src="assets/img/joia5.png" />
+        <h1>Joia 5</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle6()" src="assets/img/joia6.png" />
+        <h1>Joia 6</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle7()" src="assets/img/joia7.png" />
+        <h1>Joia 7</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle8()" src="assets/img/joia8.png" />
+        <h1>Joia 8</h1>
+    </div>
+    <div class="produto">
+        <img (click)="toggle9()" src="assets/img/joia9.png" />
+        <h1>Joia 9</h1>
+    </div>
+
+    <ng-container modal1 *ngIf="mostrar1">
+        <div class="modal">
+            <div class="fechar" (click)="toggle1()"><img src="assets/img/closeButton.svg"></div>
+            <div class="product-title">Escapulário banhado a prata 70cm</div>
+            <div class="product-container">
+                <img class="product-img" src="assets/img/joia1.png">
+                <div class="product-description">
+                    <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+                    <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+                </div>
+            </div>
+        </div>
+        <div (click)="toggle1()" class="overlay"></div>
+    </ng-container>
+
+    <ng-container #modal2 *ngIf="mostrar2">
+      <div class="modal">
+          <div class="fechar" (click)="toggle2()"><img src="assets/img/closeButton.svg"></div>
+          <div class="product-title">Corrente veneziana 60cm</div>
+          <div class="product-container">
+              <img class="product-img" src="assets/img/joia2.png">
+              <div class="product-description">
+                  <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+                  <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+              </div>
+          </div>
+      </div>
+      <div (click)="toggle2()" class="overlay"></div>
+  </ng-container>
+
+  <ng-container #modal3 *ngIf="mostrar3">
+    <div class="modal">
+        <div class="fechar" (click)="toggle3()"><img src="assets/img/closeButton.svg"></div>
+        <div class="product-title">Corrente veneziana 60cm</div>
+        <div class="product-container">
+            <img class="product-img" src="assets/img/joia3.png">
+            <div class="product-description">
+                <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+                <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+            </div>
+        </div>
+    </div>
+    <div (click)="toggle3()" class="overlay"></div>
+</ng-container>
+
+<ng-container #modal4 *ngIf="mostrar4">
+  <div class="modal">
+      <div class="fechar" (click)="toggle4()"><img src="assets/img/closeButton.svg"></div>
+      <div class="product-title">Corrente veneziana 60cm</div>
+      <div class="product-container">
+          <img class="product-img" src="assets/img/joia4.png">
+          <div class="product-description">
+              <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+              <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+          </div>
+      </div>
+  </div>
+  <div (click)="toggle4()" class="overlay"></div>
+</ng-container>
+
+<ng-container #modal5 *ngIf="mostrar5">
+  <div class="modal">
+      <div class="fechar" (click)="toggle5()"><img src="assets/img/closeButton.svg"></div>
+      <div class="product-title">Corrente veneziana 60cm</div>
+      <div class="product-container">
+          <img class="product-img" src="assets/img/joia5.png">
+          <div class="product-description">
+              <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+              <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+          </div>
+      </div>
+  </div>
+  <div (click)="toggle5()" class="overlay"></div>
+</ng-container>
+
+<ng-container #modal6 *ngIf="mostrar6">
+  <div class="modal">
+      <div class="fechar" (click)="toggle6()"><img src="assets/img/closeButton.svg"></div>
+      <div class="product-title">Corrente veneziana 60cm</div>
+      <div class="product-container">
+          <img class="product-img" src="assets/img/joia6.png">
+          <div class="product-description">
+              <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+              <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+          </div>
+      </div>
+  </div>
+  <div (click)="toggle6()" class="overlay"></div>
+</ng-container>
+
+<ng-container #modal7 *ngIf="mostrar7">
+  <div class="modal">
+      <div class="fechar" (click)="toggle7()"><img src="assets/img/closeButton.svg"></div>
+      <div class="product-title">Corrente veneziana 60cm</div>
+      <div class="product-container">
+          <img class="product-img" src="assets/img/joia7.png">
+          <div class="product-description">
+              <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+              <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+          </div>
+      </div>
+  </div>
+  <div (click)="toggle7()" class="overlay"></div>
+</ng-container>
+
+<ng-container #modal8 *ngIf="mostrar8">
+  <div class="modal">
+      <div class="fechar" (click)="toggle5()"><img src="assets/img/closeButton.svg"></div>
+      <div class="product-title">Corrente veneziana 60cm</div>
+      <div class="product-container">
+          <img class="product-img" src="assets/img/joia8.png">
+          <div class="product-description">
+              <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+              <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+          </div>
+      </div>
+  </div>
+  <div (click)="toggle8()" class="overlay"></div>
+</ng-container>
+
+<ng-container #modal9 *ngIf="mostrar9">
+  <div class="modal">
+      <div class="fechar" (click)="toggle9()"><img src="assets/img/closeButton.svg"></div>
+      <div class="product-title">Corrente veneziana 60cm</div>
+      <div class="product-container">
+          <img class="product-img" src="assets/img/joia9.png">
+          <div class="product-description">
+              <p class="description">Suspendisse semper placerat tortor quis lobortis. Proin placerat, sem ac lobortis ornare, sem tortor sagittis felis, a semper nisl mauris quis urna. Donec dignissim vel ante at ullamcorper.</p>
+              <div style="background: #999 !important; margin-bottom: 13px;"><a class="product-button" href="">Chame no Whatsapp</a></div>
+          </div>
+      </div>
+  </div>
+  <div (click)="toggle9()" class="overlay"></div>
+</ng-container>
+</div>
